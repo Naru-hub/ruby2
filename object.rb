@@ -33,3 +33,26 @@ animals = ["dog","cat","elephant"]
 puts animals[5]        #nil
 animals[5] = "whale"
 puts animals[5]        #whale
+
+cabinet = [123, "hello", false, ["apple", "orange"]]
+
+colors = ["red","blue","yellow","pink"]
+puts colors.empty?
+colors << "green"
+puts colors.length
+#false
+#5
+
+animals = ["dog","cat","elephant"]
+animals = %w(dog cat elephant)
+
+arr = [1,2,3]
+puts arr.inspect   #[1, 2, 3]
+obj = Object.new
+p obj              ##<Object:0x00007f9e1b95cac0>
+
+a = 2; b = 3; c = 4
+puts a + b * c        #14 掛け算優先
+puts (a + b) * c      #20 割り算優先
+
+
