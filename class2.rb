@@ -39,3 +39,14 @@ def change_name(new_name)
   name = new_name         #注意!nameはローカル変数になる
   self.name = new_name    #正しいname=メソッドの呼び出し
 end
+
+
+class Shape
+  PI = 3.14159
+
+  def self.circle(r)
+    r * r * PI
+  end
+end
+puts Shape::PI          #3.14159
+puts Shape.circle(5)    #78.53975
